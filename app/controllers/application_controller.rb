@@ -1,3 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+
+  def hello
+    render html: "hello, world!"
+  end
+
+  def picture
+    render image: "https://lh3.googleusercontent.com/BtG4ggGEAfTnxDDJIzorLHo2BYDe-kPRHyWjgfAr-qOlBw7LXAtO0Ia4Eho78k31KtXFVYa1HD_Z0LyADnHDb-Z1dDS8-KWjY4YtMYaPWWczoLWxr2aqxZWJA1pNHUveELxPR6GENnwJm19AIYo5tUaCaOClXmjjqrMefPDPZcnZzTIFTJ6QRS1mfdSTsSOjo7NSN5ymoi3_KInW9p_uoUb0UL4nEsLYtYMykVeT7AxglvmeoLdMjWo09DntsVx4OgunK29BhvZtCtPBm42Q6XrUHsndXc-GeqZ5-V7tccY9fTImFCAHdXe61fkdfA-KHUGoIgbqiEO7s8j4DjzkbOWu6qt6IPKY-ujpThJRzQqallMT_mNWpeFpGPDduygM5_Tv1_JCESHQrwDPowy0SIjY1s2iwlnbx8VoqGqR5FXQhHCB2kM_muc_Pn_RE8qTt9_N7j0VBvcyQDaEJfyvbSfjE3YH2S3xdZuoSYKXB7icTA6jhlhsYdOKm3rpkAyOKazPwxJL2pzRU287BZGDENYI0W6ejK3SIhCbExFFO_FuwKIGQbyTI1GnlJocHsbKDGwqHWhCaaf0mEXLqqpP7sliSZ7H0ShR2RjhBXpMk68=w1172-h659-no"
+  end
 end
