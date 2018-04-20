@@ -6,3 +6,21 @@ body {
   width: 1400px;
   height: auto;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.name {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  font-family: 'Ubuntu', cursive;
+  font-size: 10vw;
+  color: white;
+}
